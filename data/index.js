@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Hide the loader and show the content when the DOM is fully loaded
+  var loader = document.getElementById("loader");
+  var content = document.getElementById("mainContent");
+
+  // Check if the entire page (including images, stylesheets, etc.) is fully loaded
+  window.addEventListener("load", function() {
+      loader.style.display = "none";  // Hide the loader
+      content.style.display = "block";  // Show the content
+  });
+});
+
+
+
 document.addEventListener("scroll", function() {
   const heroTitle = document.querySelector(".hero__title");
   const scrollY = window.scrollY;
