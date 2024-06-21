@@ -9,7 +9,7 @@ document.addEventListener("scroll", function() {
     const containerWidth = heroTitle.offsetWidth;
 
     // Calculate the font size based on the container width
-    const fontSize = Math.min(containerWidth / 80, 120); // Adjust the division factor to control the font size
+    const fontSize = Math.min(containerWidth / 50, 120); // Adjust the division factor to control the font size
 
     // Apply the font size to the title
     heroTitle.style.fontSize = `${fontSize}px`;
